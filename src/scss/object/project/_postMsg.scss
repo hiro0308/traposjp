@@ -1,0 +1,70 @@
+.p-postMsg {
+	box-sizing: border-box;
+	width: 100%;
+	&__item {
+		border-bottom: 1px solid #eee;
+		padding: 8px 15px;
+		
+		&:last-child {
+			border-bottom: inherit
+		}
+	}
+	&__link {
+		display: flex;
+		align-items: center;
+		
+		@include mq(sm) {
+			align-items: flex-start;
+		}
+	}
+	
+	&__avatar {
+		width: 75px;
+		height: 75px;
+		border-radius: 50%;
+		margin-right: 15px;
+		
+		@include mq(sm) {
+			width: 45px;
+			height: 45px;
+		}
+	}
+	
+	&__name {
+		font-size: 16px;
+		font-weight: bold;
+		
+		@include mq(sm) {
+			font-size: 12px;
+		}
+	}
+	
+	&__msg {
+		font-size: 14px;
+		color: #777;
+		
+		@include mq(sm) {
+			font-size: 12px;
+		}
+	}
+	
+	&--top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 3px;
+	}
+	
+	&--right {
+		width: 80%;
+	}
+	
+	&__date {
+		font-size: 12px;
+		color: #777;
+		
+		@include mq() {
+			font-size: 10px;
+		}
+	}
+}

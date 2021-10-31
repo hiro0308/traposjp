@@ -1,0 +1,15 @@
+.c-btn {
+	cursor: pointer;
+	border: none;
+	
+	&--primary {
+		background: $font-color-main;
+		color: #fff;
+		font-weight: bold;
+	}
+	
+	&--secondary {
+		background: #444;
+		color: #fff;
+	}
+}

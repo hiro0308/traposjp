@@ -1,0 +1,28 @@
+.p-sidePost {
+	display: block;
+	margin-bottom: 30px;
+	&__content {
+		&__title {
+			font-size: 14px;
+			margin-bottom: 20px;
+			
+			&:before {
+				font-family: "Font Awesome 5 Free";
+				content: '\f00c';
+				color: $font-color-main;
+				font-size: 18px;
+				padding-right: 10px;
+				box-sizing: border-box;
+			}
+		}
+	}
+	
+	&__title {
+		font-size: 14px;
+	}
+	
+	&__body {
+		padding: 5px;
+		box-sizing: border-box;
+	}
+}

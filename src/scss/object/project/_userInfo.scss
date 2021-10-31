@@ -1,0 +1,96 @@
+.p-userInfo {
+	margin: 10px 15px 25px 15px;
+	
+	&__prof {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		margin-bottom: 20px;
+		
+		@include mq(sm) {
+			flex-wrap: wrap;
+		}
+	}
+	
+	&--left {
+		width: 150px;
+		min-width: 150px;
+		min-height: 150px;
+		height: 150px;
+		border-radius: 50%;
+		border: 1px solid #eee;
+		margin-right: 28px;
+		box-sizing: border-box;
+		
+		@include mq(sm) {
+			width: 100px;
+			min-width: 100px;
+			min-height: 100px;
+			height: 100px;
+			margin-bottom: 30px;
+		}
+	}
+	
+	&__img {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+	}
+	
+	&__edit {
+		display: block;
+		font-size: 12px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		padding: 3px 10px;
+		text-align: center;
+		background: $font-color-main;
+		color: #fff;
+		font-weight: bold;
+		border: none;
+
+			&:after {
+			font-family: "Font Awesome 5 Free";
+			font-weight: bold;
+			content: '\f509';
+			margin-left: 5px;
+		}
+	}
+	
+	&__post {
+		border-radius: 5px;
+		display: block;
+		font-size: 12px;
+		padding: 3px 10px;
+		// min-width: 120px;
+		text-align: center;
+		background: $font-color-main;
+		color: #fff;
+		font-weight: bold;
+		border: none;
+		margin-bottom: 10px;
+		margin-right: 20px;
+		&:after {
+			font-family: "Font Awesome 5 Free";
+			font-weight: bold;
+			content: '\f044';
+			margin-left: 5px;
+		}
+	}
+	
+	&__name {
+		font-size: 20px;
+		font-weight: bold;
+		margin-bottom: 10px;
+		letter-spacing: 3px;
+		
+		@include mq(sm) {
+			font-size: 16px;
+		}
+	}
+	
+	&__intro {
+		width: 90%;
+		font-size: 14px;
+	}
+	}

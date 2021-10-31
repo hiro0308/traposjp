@@ -1,0 +1,20 @@
+.l-content {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	
+	&--2column {
+		flex-direction: row;
+		
+		@include mq() {
+			flex-direction: column-reverse;
+		}
+	}
+	
+	&--index {
+		flex-direction: row;
+		@include mq() {
+			flex-direction: column-reverse;
+		}
+	}
+}

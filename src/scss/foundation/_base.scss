@@ -1,0 +1,34 @@
+body {
+	margin: 0;
+	background: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: #444;
+}
+
+ul,li,figure {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+}
+
+label {
+	display: block;
+}
+
+h1,h2,h3,p {
+	margin: 0;
+}
+
+::placeholder {
+	color: #999;
+}

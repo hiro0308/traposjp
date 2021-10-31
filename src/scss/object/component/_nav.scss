@@ -1,0 +1,60 @@
+.c-nav {
+	@include mq() {
+		position: fixed;
+		top: 0;
+		right: -100%;
+		width: 100%;
+		padding-top: 50px;
+		height: 100vh;
+		background: rgba(0, 0, 0, 0.8);
+		transition: all .5s;
+		z-index: 1;
+	}
+	
+	&.active {
+		transition: .5s;
+		transform: translateX(-100%);
+	}
+	
+	&__item {
+		border-bottom: 1px solid #fff;
+	}
+	
+	&__list {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		
+		@include mq() {
+			display: block;
+		}
+		
+	}
+	&__link {
+		padding: 7px 12px;
+		margin-right: 5px;
+		// cursor: pointer;
+		font-weight: bold;
+		font-size: 14px;
+		
+		@include mq() {
+			color: #fff;
+			display: block;
+			width: 100%;
+			text-align: center;
+			padding: 15px;
+		}
+		
+		&--signup {
+			background: $font-color-main;
+			padding: 12px 16px;
+			color: #fff;
+			
+			@include mq() {
+				background: inherit;
+				padding: 15px;
+			}
+		}
+	}
+}

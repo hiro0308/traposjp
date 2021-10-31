@@ -1,0 +1,38 @@
+.c-pagination {
+	width: 100%;
+	margin: 60px auto;
+	
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	
+	&__item {
+		margin-right: 30px;
+		
+		@include mq(sm) {
+			margin-right: 10px;
+		}
+		
+		&:last-child {
+			margin-right: inherit;
+		}
+	}
+	
+	&__link {
+		background: #f6f5f4;
+		color: #444;
+		cursor: pointer;
+		font-weight: bold;
+		padding: 15px;
+		border-radius: 20px;
+		font-size: 14px;
+		
+		&.active,
+		&:hover {
+			color: $font-color-main;
+		}
+	}
+}

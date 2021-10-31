@@ -1,0 +1,124 @@
+.p-commentList {
+	margin-top: 40px;
+	@include mq() {
+		margin-top: 20px;
+	}
+	&__title {
+		font-size: 18px;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-bottom: 20px;
+		box-sizing: border-box;
+	}
+	&__inner {
+		background: #f6f5f4;
+	  height: 500px;
+	  overflow-y: scroll;
+	  padding: 30px 15px;
+	  position: relative;
+		box-sizing: border-box;
+		width: 100%;
+	}
+	&__no__msg {
+		text-align: center;
+    font-size: 16px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	
+	&__form {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #f6f5f4;
+		padding: 10px;
+		width: 100%;
+		box-sizing: border-box;
+		margin-bottom: 20px;
+	}
+	
+	&__input {
+		width: 85%;
+		margin-right: 10px;
+		height: auto;
+		min-height: 35px;
+		border: none;
+		box-sizing: border-box;
+	}
+	
+	&--submit {
+		width: 10%;
+		padding: 5px;
+		min-width: 35px;
+		font-size: 12px;
+		min-height: 35px;
+		box-sizing: border-box;
+	}
+	
+	&__container {
+		margin-bottom: 30px;
+		display: flex;
+		align-items: flex-start;
+	}
+	
+	&--right {
+		flex-direction: row-reverse;
+		justify-content: end;
+		
+		& .p-commentList__msg {
+			background: #D2EAF0;
+    	position: relative;
+		}
+		
+		& .p-commentList__img {
+			margin-left: 20px;
+		}
+		
+		& .p-commentList__triangle {
+			border-top: 10px solid transparent;
+			border-bottom: 10px solid transparent;
+			border-right: 10px solid transparent;
+			border-left: 15px solid #D2EAF0;
+			top: 5px;
+			right: -20px;
+		}
+	}
+	
+	&--left {
+		justify-content: flex-start;
+		& .p-commentList__msg {
+			background: #F6E2DF;
+    	position: relative;
+		}
+		
+		& .p-commentList__img {
+			margin-right: 20px;
+		}
+		
+		& .p-commentList__triangle {
+			border-top: 10px solid transparent;
+			border-bottom: 10px solid transparent;
+			border-left: 10px solid transparent;
+			border-right: 15px solid #F6E2DF;
+			top: 5px;
+			left: -20px;
+		}
+	}
+	
+	&__msg {
+		font-size: 14px;
+		padding: 10px;
+    border-radius: 3px;
+    width: 80%;
+	}
+	
+	&__img {
+		width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: block;
+		box-sizing: border-box;
+	}
+}

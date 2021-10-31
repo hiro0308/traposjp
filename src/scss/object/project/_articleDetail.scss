@@ -1,0 +1,112 @@
+.p-articleDetail {
+	padding: 40px;
+	border-radius: 20px;
+	border: 1px solid #eee;
+	
+	@include mq() {
+		padding: inherit;
+		border: none;
+		border-radius: inherit;
+	}
+	&__head {
+		margin-bottom: 5px;
+		height: auto;
+	}
+	
+	&__imgMain {
+		height: auto;
+		object-fit: cover;
+		vertical-align: bottom;
+	}
+	
+	&__imgSub {
+		box-sizing: border-box;
+		margin-bottom: 20px;
+		
+		&__list {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+		}
+		
+		&__item {
+			width: 25%;
+			height: 120px;
+			
+			@include mq() {
+				height: 90px;
+			}
+			
+			@include mq(sm) {
+				height: 60px;
+			}
+			
+			padding-right: 5px;
+		}
+	}
+	
+	&__img {
+		object-fit: cover;
+		height: 100%;
+		
+		&:last-child {
+			padding-right: inherit;
+		}
+	}
+	
+	&__inner {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	&__body {
+		position: relative;
+	}
+
+	&__title {
+		font-size: 20px;
+		font-weight: bold;
+	}
+	
+	&__favIcon {
+    position: absolute;
+		top: 20%;
+    right: 10%;
+    font-size: 20px;
+		color: #ddd;
+		cursor: pointer;
+		
+		&.active {
+			border: none;
+			color: #eb0f0f;
+		}
+	}
+	
+	&__date {
+		font-size: 10px;
+	}
+	
+	&__user {
+		line-height: 45px;
+		border-top: 3px dotted #eee;
+		border-bottom: 3px dotted #eee;
+		margin-top: 10px;
+		padding: 8px;
+	}
+	
+	&__avatar {
+		width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+		vertical-align: middle;
+	}
+	
+	&__name {
+		font-size: 16px;
+	}
+	
+	&__foot {
+		padding: 15px;
+	}
+}

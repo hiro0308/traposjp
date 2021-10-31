@@ -1,0 +1,8 @@
+.l-main {
+	flex: 1;
+	margin-bottom: 150px;
+	width: 100%;
+	@include mq() {
+		margin: inherit;
+	}
+}

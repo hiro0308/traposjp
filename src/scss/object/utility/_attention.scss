@@ -1,0 +1,21 @@
+.u-attention {
+	color: #ff0010;
+	font-size: 14px;
+	
+	@include mq(sm) {
+		font-size: 12px;
+	}
+	
+	&--common {
+		margin-bottom: 10px;
+		padding-left: 25px;
+		
+		@include mq() {
+			padding-left: 15px;
+		}
+	}
+	
+	&--uploadImg {
+		margin-bottom: 15px;
+	}
+}

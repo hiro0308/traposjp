@@ -1,0 +1,103 @@
+.p-sideMenu {
+	width: 230px;
+	min-width: 230px;
+	padding-right: 20px;
+	box-sizing: border-box;
+	
+	@include mq() {
+		// display: none;
+		margin-top: 60px;
+		width: 100%;
+		min-width: inherit;
+		padding-right: inherit;
+	}
+	
+	&__list {
+		@include mq() {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+		}
+	}
+	
+	&__item {
+		margin-bottom: 10px;
+		width: 100%;
+		
+		@include mq() {
+			width: 48%;
+			border-bottom: 1px solid #777;
+			
+			&:nth-of-type(odd) {
+				margin-right: 10px;
+				margin-left: 10px;
+			}
+		}
+		
+		@include mq(sm) {
+			width: 100%;
+			margin-right: inherit;
+			
+			&:nth-of-type(odd) {
+				margin-right: inherit;
+				margin-left: inherit;
+			}
+		}
+	}
+	
+	&__link {
+		padding: 8px 10px;
+		box-sizing: border-box;
+		height: 30px;
+		display: block;
+		width: 100%;
+		line-height: 100%;
+		font-size: .9rem;
+		
+		&:hover {
+			color: $font-color-main;
+		}
+	}
+	
+	&__logout {
+		&:before {
+			font-family: "Font Awesome 5 Free";
+			font-weight: bold;
+			content: '\f2f5';
+		}
+	}
+	
+	&__post {
+		&:before {
+			font-family: "Font Awesome 5 Free";
+			font-weight: bold;
+			content: '\f27a';
+		}
+	}
+	
+	&__passEdit {
+		&:before {
+			font-family: "Font Awesome 5 Free";
+			font-weight: bold;
+			content: '\f13e';
+		}
+	}
+	
+	
+	&__prof {
+		&:before {
+			font-family: "Font Awesome 5 Free";
+			font-weight: bold;
+			content: '\f509';
+		}
+	}
+	
+	&__withdraw {
+		&:before {
+			font-family: "Font Awesome 5 Free";
+			font-weight: bold;
+			content: '\f52b';
+		}
+	}
+}

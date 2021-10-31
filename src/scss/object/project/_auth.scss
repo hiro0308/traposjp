@@ -1,0 +1,226 @@
+.p-auth {
+	&__title {
+		background: none;
+		color: $font-color-main;
+		font-size: 24px;
+		font-weight: bold;
+		padding: 0;
+		margin-bottom: 15px;
+		
+		
+		@include mq() {
+			background: $font-color-main;
+			color: #fff;
+			font-size: 16px;
+			padding: 12px 15px;
+			box-sizing: border-box;
+			width: 100%;
+			-webkit-font-smoothing: antialiased;
+		}
+		
+		&--withdraw {
+			text-align: center;
+			
+			@include mq() {
+				text-align: left;
+			}
+		}
+	}
+	
+	&__login__btn {
+		width: 90%;
+		display: block;
+		margin: 20px auto 15px auto;
+		max-width: 250px;
+		padding: 15px 35px;
+		margin: 30px auto;
+		
+		@include mq() {
+			margin: 20px auto 15px auto;
+			padding: 10px 35px;
+			max-width: 180px;
+		}
+		
+		@include mq(sm) {
+			max-width: inherit;
+		}
+	}
+	
+	&__passForget {
+		display: block;
+		font-size: 14px;
+		color: $font-color-main;
+		font-weight: bold;
+		text-align: center;
+		cursor: pointer;
+		
+		@include mq() {
+			font-size: 12px;
+		}
+	}
+	
+	&__announce {
+		margin-bottom: 20px;
+		font-size: 14px;
+		padding-left: 25px;
+		
+		@include mq() {
+			font-size: 12px;
+			padding: 0 15px 15px 15px;
+			width: 100%;
+			box-sizing: border-box;
+			margin-bottom: inherit;
+			
+		}
+		
+		&--underline {
+			margin-bottom: 80px;
+			text-align: center;
+			@include mq() {
+				border-bottom: 1px solid #999;
+				text-align: left;
+			}
+		}
+		
+		&__guide {
+			color: #F15252;
+			margin-left: 5px;
+		}
+	}
+	
+	&__label {
+		font-size: 12px;
+		padding: 25px;
+		box-sizing: border-box;
+		
+		@include mq() {
+			padding: 15px;
+		}
+		
+		&--line {
+			margin-bottom: -1px;
+			@include mq() {
+				border-top: 1px solid #ddd;
+			}
+		}
+		&__checkbox {
+			margin-top: 30px;
+			text-align: center;
+			cursor: pointer;
+			
+			@include mq() {
+				margin-top: 15px;
+				margin-left: 15px;
+			}
+		}
+		&--drop {
+			width: 100%;
+			background: #f6f5f4;
+			margin-bottom: 20px;
+			min-height: 200px;
+			padding: 20px;
+			box-sizing: border-box;
+			font-size: 14px;
+			position: relative;
+			color: #4f5050;
+			margin-top: 15px;
+			cursor: pointer;
+		}
+		&__upload {
+			background: #a3a3a3;
+			color: #fff;
+			text-align: center;
+			padding: 7px 10px;
+			cursor: pointer;
+			border-radius: 5px;
+			width: 40%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 10px;
+		}
+	}
+	
+	&__text {
+		font-size: 14px;
+		
+		@include mq(sm) {
+			font-size: 12px;
+		}
+	}
+	
+	&__signupLink {
+		font-size: 16px;
+		text-align: center;
+		margin-top: 15px;
+		display: block;
+		cursor: pointer;
+		
+		@include mq() {
+			font-size: 12px;
+		}
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	
+	&__count {
+		text-align: right;
+	}
+	
+	&__withdraw__btn {
+		display: block;
+		margin: 20px auto 15px auto;
+		max-width: 180px;
+		padding: 10px 35px;
+		width: 100%;
+		margin-top: 70px;
+	}
+	
+	&__form {
+		&--group {
+			padding: 15px;
+			box-sizing: border-box;
+			
+			@include mq() {
+				border-top: 1px solid #999;
+			}
+			
+		}
+	}
+	
+	&__inputFile {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		z-index: 2;
+	}
+	
+	&__imgCont {
+		font-size: 12px;
+	}
+	
+	&__viewImg {
+		width: 80%;
+		height: auto;
+		margin-top: 30px;
+	}
+	
+	&__img {
+		display: block;
+		width: 80%;
+		height: auto;
+		margin-top: 30px;
+	}
+	&__space {
+		padding: 15px;
+		font-size: 12px;
+		
+		@include mq() {
+			border-top: 1px solid #999;
+		}
+	}
+}

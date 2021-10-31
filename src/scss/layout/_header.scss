@@ -1,0 +1,33 @@
+.l-header {
+	padding: 10px;
+	box-sizing: border-box;
+	width: 100%;
+	border-bottom: 2px solid #f6f5f4;
+	margin-bottom: 30px;
+	
+	@include mq() {
+		margin-bottom: 15px;
+	}
+	
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		margin-bottom: 5px;
+	}
+	
+	&__title {
+		margin: 0;
+		font-family: 'Noto Sans Mono', monospace;
+		
+		@include mq(sm) {
+			font-size: 24px;
+		}
+	}
+	
+	&__subTitle {
+		font-size: 12px;
+		margin-left: 10px;
+		vertical-align: middle;
+	}
+}
