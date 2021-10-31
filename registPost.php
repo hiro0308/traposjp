@@ -104,7 +104,7 @@ if(!empty($_POST)){
         if($stmt) {
           $_SESSION['msg_success'] = SUC04;
           debug('マイページへ遷移します');
-          header('Location:registPost.php');
+          header('Location:mypage.php');
         }
       }else {
         debug('新規登録です');
