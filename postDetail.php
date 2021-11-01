@@ -178,8 +178,6 @@ require('head.php');
 												</p>
 											</div>
 										<?php endif; ?>
-									<?php else: ?>
-										<p class="p-commentList__no__msg">まだメッセージはありません</p>
 									<?php endif; ?>
 								<?php endforeach; ?>
 							<?php else: ?>
